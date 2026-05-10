@@ -1,13 +1,12 @@
-# Virtual environment
+# IDE folders
+.idea/
+**/.idea/
+
+# Virtual environments
 .venv/
 venv/
-
-# PyCharm / IntelliJ
-.idea/
+env/
 
 # Python cache
 __pycache__/
 *.pyc
-
-# Jupyter
-.ipynb_checkpoints/
