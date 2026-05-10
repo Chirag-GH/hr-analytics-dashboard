@@ -69,10 +69,7 @@ Before Filter Selection
   <img src="images/dashboard_summary_before_filter.png" width="500">
 <br>
 <sub>
-Gender: All
-Status: All
-Location: All
-Hiredate: All
+No filters applied
 </sub>
 </div>
 <br>
@@ -83,12 +80,13 @@ After Filter Selection
   <img src="images/dashboard_summary_after_filter.png" width="500">
 <br>
 <sub>
-Gender: Female
-Status: Hired
-Location: All
-Hiredate: 2021 ~ 2024
+Gender: Female |
+Status: Hired |
+Location: All |
+Hiredate: 2021 ~ 2024 |
 </sub>
 </div>
+<br>
 
 <div align="center">
 Interactive Dashboard Filtering
@@ -96,12 +94,12 @@ Interactive Dashboard Filtering
   <img src="images/dashboard_summary_after_chart_filter.png" width="500">
 <br>
 <sub>
-Dashboard-wide updates based on selected Age Group and Salary visualizations
+Dashboard-wide updates based on selected Age & Salary Chart
 </sub>
 </div>
 
 #### Details Dashboard Filters
-- Multiple employee-level filters across more than 13 dimensions
+Multiple employee-level filters across more than 13 dimensions
 
 <div align="center">
 Before Filter Selection
@@ -109,7 +107,7 @@ Before Filter Selection
   <img src="images/dashboard_details_before_filter.png" width="500">
 <br>
 <sub>
-No Filter Enabled
+No Filter applied
 </sub>
 </div>
 <br>
@@ -120,49 +118,41 @@ After Filter Selection
   <img src="images/dashboard_details_after_filter.png" width="500">
 <br>
 <sub>
-Gender: Female
-Education Level: PhD
-Age Group: 35-44
-Department: Finance, HR, Operations, Sales
-Job Title: All
-Location: HQ
-State: All
-City: All
-Salary: All
-Status: Hired
-Hiredate: 2020 ~ 2024
-Tenure: All
+Gender: Female |
+Education Level: PhD |
+Age Group: 35-44 |
+Department: Finance, HR, Operations, Sales |
+Job Title: All |
+Location: HQ |
+State: All |
+City: All |
+Salary: All |
+Status: Hired |
+Hiredate: 2020 ~ 2024 |
+Tenure: All |
 </sub>
 </div>
-
 
 ---
 
 ## Repository Structure
-
 ```
 hr-analytics-dashboard/
 │
-├── data-generation/
-│   └── generate_hr_data.py
+├── data-generation/                    # Program for dataset generation
+│   └── generate_data   .py
 │
-├── datasets/
-│   └── hr_data.csv
+├── datasets/                           # Source datasets used for dashboard development
+│   └── dataset.csv
 │
-├── images/
-│   ├── dashboard_overview.png
-│   ├── demographics_view.png
-│   ├── income_analysis.png
-│   └── employee_records.png
+├── images/                             # Dashboard screenshots and icons used in the project
 │
-├── hr-dashboard.twbx
+├── hr-dashboard.twbx                   # Tableau packaged workbook containing dashboards and visualizations
 │
-├── README.md
-├── LICENSE
-├── .gitignore
-└── requirements.txt
+├── README.md                         	# Project overview and instructions
+├── LICENSE                             # License information for the repository
+└── .gitignore                          # Files and directories to be ignored by Git
 ```
-
 ---
 
 ## [Tableau Public Dashboard](https://public.tableau.com/app/profile/chiraggh/viz/HRDashboard_17784344141840/SummaryDashboard)
