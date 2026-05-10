@@ -140,7 +140,7 @@ Tenure: All |
 hr-analytics-dashboard/
 │
 ├── data-generation/                    # Program for dataset generation
-│   └── generate_data   .py
+│   └── generate_data.py
 │
 ├── datasets/                           # Source datasets used for dashboard development
 │   └── dataset.csv
