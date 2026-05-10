@@ -1,132 +1,146 @@
 # HR Analytics Dashboard
 
-This project presents a comprehensive **HR analytics solution** built using Tableau to help HR managers and business stakeholders analyze workforce data through interactive dashboards and employee-level reporting.
-
-The dashboard provides insights into:
-- Workforce overview and employee trends
-- Employee demographics and distribution
-- Salary and income analysis
-- Detailed employee records for operational analysis
+This project presents an interactive **HR Analytics Dashboard** developed using Tableau for workforce reporting, employee analysis, and organizational insights.
 
 The project is designed as a portfolio project showcasing:
-- Interactive Tableau dashboard development
-- HR data visualization
-- KPI reporting and workforce analytics
-- Dashboard design and user-driven filtering
+
+* HR analytics and workforce reporting
+* Interactive Tableau dashboard development
+* Employee demographic and income analysis
+* Dashboard interactivity and navigation design
+* Data generation and visualization workflows
 
 ---
 
 ## Dashboard Overview
 
-The HR dashboard is divided into four major sections:
+The project contains two primary dashboards:
 
-1. **Overview**
-2. **Demographics**
-3. **Income Analysis**
-4. **Employee Records**
+### Summary Dashboard
 
-The dashboard enables users to interactively filter and analyze employee information across multiple dimensions.
+<div align="center">
+  <img src="images/summary_dashboard_overview.png" width="500">
+</div>
+<br>
+The Summary Dashboard provides a high-level summary of workforce metrics, employee demographics, and salary analysis.
 
----
+It enables users to monitor employee hiring and termination trends, analyze workforce distribution across departments and locations, evaluate demographic composition, and compare salary patterns across education levels, age groups, and departments.
 
-## Project Objectives
+The dashboard supports interactive analysis through cross-filtering and dashboard-wide updates based on user selections.
 
-### Overview Analysis
+### Details Dashboard
 
-Provide high-level workforce insights including:
-- Total hired employees
-- Active employees
-- Terminated employees
-- Employee hiring and termination trends over time
-- Employee distribution across departments and job titles
-- HQ vs branch employee comparison
-- Geographic employee distribution
+<div align="center">
+  <img src="images/details_dashboard_overview.png" width="500">
+</div>
+<br>
+The Details Dashboard provides employee-level reporting and detailed workforce analysis.
 
-### Demographics Analysis
-
-Analyze workforce composition through:
-- Gender distribution
-- Age group distribution
-- Education level analysis
-- Employee count by age and education
-- Correlation between education background and performance ratings
-
-### Income Analysis
-
-Analyze salary-related patterns including:
-- Salary comparison across education levels
-- Gender-based salary comparison
-- Relationship between age and salary by department
-
-### Employee Records
-
-Provide detailed employee-level reporting including:
-- Employee name
-- Department
-- Position
-- Gender
-- Age
-- Education
-- Salary
-
-Users can dynamically filter employee records using dashboard filters.
+It enables users to explore employee information such as ID, demographics, position, geographics, salary, and tenure through an interactive records view with dynamic employee-level filtering and detailed workforce analysis.
 
 ---
 
 ## Dashboard Features
 
-### KPI Cards (BANs)
-- Total Hired Employees
-- Active Employees
-- Terminated Employees
+### Interactive Features
+- Dashboard-wide dynamic filtering and interactive analysis
+- Cross-filtering between dashboard visualizations that update the entire dashboard
+- Dynamic updates across charts, KPIs, and employee records based on user interaction
 
-### Charts & Visualizations
-- Line + Area Charts
-- Bar Charts
-- Donut Charts
-- Heatmaps
-- Map Visualizations
-- Barbell Charts
-- Scatter Plots
-- Employee Record Views
+### Navigation & Controls
+- Navigation buttons for switching between dashboards
+- Toggle buttons for showing and hiding filters
+- Export buttons for downloading dashboards as PDF or image files
+- Custom icons used for dashboard controls and navigation
 
-### Interactivity
-- Dynamic dashboard filters
-- Cross-filtering between visuals
-- Interactive employee analysis
+### Filters
 
----
+The dashboards support dynamic filtering, allowing users to analyze workforce data across multiple employee, demographic, and organizational dimensions.
 
-## Tools & Technologies
+#### Overview Dashboard Filters
+- Gender
+- Status
+- Location
+- Hiredate
 
-| Tool | Purpose |
-|---|---|
-| Tableau Public | Dashboard Development |
-| Python | HR Dataset Generation |
-| CSV Files | Data Source |
-| Git & GitHub | Version Control |
+<div align="center">
+Before Filter Selection
+<br>
+  <img src="images/dashboard_summary_before_filter.png" width="500">
+<br>
+<sub>
+Gender: All
+Status: All
+Location: All
+Hiredate: All
+</sub>
+</div>
+<br>
 
----
+<div align="center">
+After Filter Selection
+<br>
+  <img src="images/dashboard_summary_after_filter.png" width="500">
+<br>
+<sub>
+Gender: Female
+Status: Hired
+Location: All
+Hiredate: 2021 ~ 2024
+</sub>
+</div>
 
-## Dashboard Screenshots
+<div align="center">
+Interactive Dashboard Filtering
+<br>
+  <img src="images/dashboard_summary_after_chart_filter.png" width="500">
+<br>
+<sub>
+Dashboard-wide updates based on selected Age Group and Salary visualizations
+</sub>
+</div>
 
-### Overview Dashboard
-![Overview Dashboard](images/dashboard_overview.png)
+#### Details Dashboard Filters
+- Multiple employee-level filters across more than 13 dimensions
 
-### Demographics Dashboard
-![Demographics Dashboard](images/demographics_view.png)
+<div align="center">
+Before Filter Selection
+<br>
+  <img src="images/dashboard_details_before_filter.png" width="500">
+<br>
+<sub>
+No Filter Enabled
+</sub>
+</div>
+<br>
 
-### Income Analysis Dashboard
-![Income Analysis](images/income_analysis.png)
+<div align="center">
+After Filter Selection
+<br>
+  <img src="images/dashboard_details_after_filter.png" width="500">
+<br>
+<sub>
+Gender: Female
+Education Level: PhD
+Age Group: 35-44
+Department: Finance, HR, Operations, Sales
+Job Title: All
+Location: HQ
+State: All
+City: All
+Salary: All
+Status: Hired
+Hiredate: 2020 ~ 2024
+Tenure: All
+</sub>
+</div>
 
-### Employee Records Dashboard
-![Employee Records](images/employee_records.png)
 
 ---
 
 ## Repository Structure
 
-```text
+```
 hr-analytics-dashboard/
 │
 ├── data-generation/
